@@ -1,0 +1,71 @@
+/* Common styles for both mobile and desktop */
+
+.Navbar_contact {
+    color: white;
+    font-size: 25px;
+    margin: 10px 10px 10px 10px;
+}
+
+.Navbar_cart,
+.Navbar_profile {
+    margin-right: 10px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+    padding: 0.2em 0.5em;
+}
+/* Mobile styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 25vw;
+        /* Adjust logo size using viewport width */
+    }
+
+    .Navbar_contact {
+        order: 2;
+        margin: 1vw 0;
+        text-align: center;
+        font-size: 4vw;
+        /* Adjust font size using viewport width */
+    }
+
+    .Navbar_cart,
+    .Navbar_profile {
+        width: 5vw;
+        /* Set a specific width for both cart and profile icons */
+        margin-top: auto;
+        margin-right: 2vw;
+        /* Set the same height as width to ensure they are in proportion */
+        /* Adjust margin between the icons */
+        /* Other shared styles for .Navbar_cart and .Navbar_profile */
+    }
+    
+
+    .cart-count {
+        font-size: 2vw;
+        /* Adjust font size using viewport width */
+        margin-right: 1vw;
+    }
+
+    .mx-auto {
+        order: 1;
+        margin-bottom: 1vw;
+    }
+
+    .d-flex {
+        order: 3;
+    }
+}
